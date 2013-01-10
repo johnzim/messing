@@ -15,5 +15,7 @@ app.get('/pie.txt', function(req, res){
 
 app.get('/chars', chars.chars);
 
+app.get('/chars/:id', chars.char);
+
 app.listen(3000);
 console.log('awake and listening on port 3000');
