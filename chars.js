@@ -1,4 +1,3 @@
-
 var characterArray = [Mal, Zoe, Wash, River, Jane, Simon, Kaylee];
 
 exports.chars = function(req, res) {
@@ -7,6 +6,6 @@ exports.chars = function(req, res) {
 
 exports.char = function(req, res) {
   var charname = characterArray[req.params.id];
-  app.send(charname);
+  res.send(charname);
 }
 
